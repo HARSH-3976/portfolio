@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">HARSH DUBEY </span>
             from <span className="purple"> Jabalpur, Madhya Pradesh, India.</span>
-            <br />I am a student persuing B.tech in Information technology ,from Baderia Global Institute of Engineering and Management (Jabalpur).
+            <br />I am a student pursuing B.tech in Information technology ,from Baderia Global Institute of Engineering and Management (Jabalpur).
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

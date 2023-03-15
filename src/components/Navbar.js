@@ -2,17 +2,23 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/hd.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faBook } from '@fortawesome/free-solid-svg-icons'
+
 
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineUser,
+  AiOutlineBook,
+  //AiOutlineMenu,
+ // AiOutlineContacts,
+ // AiOutlinePhone
 } from "react-icons/ai";
-
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -29,6 +35,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+    
     <Navbar
       expanded={expand}
       fixed="top"
@@ -37,7 +44,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="img-fluid logo" alt="brand"  />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -51,9 +58,10 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
+          
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{fontSize: "1em", marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -63,20 +71,30 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{fontSize: "1em", marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
-          
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/education"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineBook style={{fontSize: "1em", marginBottom: "2px" }} />Education
 
+              </Nav.Link>
+            </Nav.Item>
+         
+           
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/harsh-7862/Portfolio"
+                href="https://github.com/harshdubey1198/"
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{ fontSize: "1em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1em" }} />
               </Button>
             </Nav.Item>
           </Nav>

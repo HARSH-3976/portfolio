@@ -6,8 +6,9 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+ 
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -67,7 +68,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Harsh-7862"
+                  href="https://github.com/Harshdubey1198"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +88,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/harsh-dubey-67a112230"
+                  href="https://www.linkedin.com/in/harshdubey1198"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -103,6 +104,16 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=%2B919691495822&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaWhatsapp />
                 </a>
               </li>
             </ul>
