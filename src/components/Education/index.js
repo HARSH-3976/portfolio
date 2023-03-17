@@ -45,7 +45,7 @@ const Education = () => {
         <div key={index}>
           <h1 style={{color:"violet", fontSize:"1em", paddingBottom:"20px"}}>{education.institution}</h1>
           <p>
-          <h7> <font color="lightgreen"> Degree: </font><font color="white">{education.degree}</font></h7>
+          <h7> <font color="lightgreen"> Degree : </font><font color="white">{education.degree}</font></h7>
           </p>
           <p>
           <h10> <font color="white"> Years Attended:</font> <font color="iceblue">{education.startYear} - {education.endYear}</font></h10>
