@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+import Particle from "../Particle2";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
@@ -45,7 +45,7 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
+        <Github/>
       </Container>
     </Container>
   );
